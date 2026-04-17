@@ -22,6 +22,9 @@ public class SecurityConfig {
     @Autowired
     private CustomUserDetailsService userDetailsService;
 
+    @Autowired
+    private CustomAuthSuccessHandler customAuthSuccessHandler;
+
 
     @Bean
     public static PasswordEncoder passwordEncoder() {
@@ -47,6 +50,7 @@ public class SecurityConfig {
                         form -> form
                                 .loginPage("/login")
                                 .loginProcessingUrl("/login")
+                                .successHandler(customAuthSuccessHandler)
                                 .failureUrl("/login?error=true")
                                 .permitAll()
                 )

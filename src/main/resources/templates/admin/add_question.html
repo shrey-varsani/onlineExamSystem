@@ -24,7 +24,7 @@
     </div>
 
 
-    <form th:action="@{/admin/exam/question/add}" th:object="${question}" method="post" class="mt-4">
+    <form th:action="@{/admin/exam/question/add}" th:object="${question}" method="post" class="mt-4" autocomplete="off">
 
         <input type="hidden" name="examId" th:value="${examId}" />
 
