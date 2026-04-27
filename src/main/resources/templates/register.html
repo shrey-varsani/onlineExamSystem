@@ -22,7 +22,7 @@
                     </div>
 
 
-                    <form th:action="@{/register}" th:object="${user}" method="post" enctype="multipart/form-data">
+                    <form th:action="@{/register}" th:object="${user}" method="post" enctype="multipart/form-data" autocomplete="off">
                         <!-- Full Name -->
                         <div class="mb-3">
                             <label for="fullName" class="form-label">Full Name</label>

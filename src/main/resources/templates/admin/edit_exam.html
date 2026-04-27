@@ -16,7 +16,7 @@
         </div>
         <div class="card-body">
           <!-- The form is pre-filled using th:object -->
-          <form th:action="@{/admin/exam/update/{id}(id=${exam.id})}" th:object="${exam}" method="post">
+          <form th:action="@{/admin/exam/update/{id}(id=${exam.id})}" th:object="${exam}" method="post" autocomplete="off">
 
             <div class="mb-3">
               <label for="title" class="form-label">Exam Title</label>

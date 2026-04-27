@@ -72,7 +72,7 @@
           <h4>Edit Profile Details</h4>
         </div>
         <div class="card-body">
-          <form th:action="@{/student/profile/update-details}" th:object="${student}" method="post">
+          <form th:action="@{/student/profile/update-details}" th:object="${student}" method="post" autocomplete="off">
             <div class="mb-3">
               <label for="fullName" class="form-label">Full Name</label>
               <input type="text" class="form-control" id="fullName" th:field="*{fullName}" required>
@@ -97,7 +97,7 @@
           <h4>Change Password</h4>
         </div>
         <div class="card-body">
-          <form th:action="@{/student/profile/update-password}" method="post">
+          <form th:action="@{/student/profile/update-password}" method="post" autocomplete="off">
             <div class="mb-3">
               <label for="oldPassword" class="form-label">Old Password</label>
               <input type="password" class="form-control" id="oldPassword" name="oldPassword" required>

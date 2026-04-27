@@ -15,7 +15,7 @@
                     <h2 class="card-title">Create New Exam</h2>
                 </div>
                 <div class="card-body">
-                    <form th:action="@{/admin/exam/add}" th:object="${exam}" method="post">
+                    <form th:action="@{/admin/exam/add}" th:object="${exam}" method="post" autocomplete="off">
                         <div class="mb-3">
                             <label for="title" class="form-label">Exam Title</label>
                             <input type="text" class="form-control" id="title" th:field="*{title}" required>
