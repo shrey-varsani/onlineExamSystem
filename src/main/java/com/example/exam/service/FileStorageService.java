@@ -32,7 +32,6 @@ public class FileStorageService {
 
     /**
      * Saves a file to the storage directory
-     *
      * @param file The file to save
      * @return The relative path to the saved file (e.g., "/uploads/filename.jpg")
      */

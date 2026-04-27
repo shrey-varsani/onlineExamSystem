@@ -33,8 +33,3 @@ public class Question {
     @JoinColumn(name = "exam_id", nullable = false)
     private Exam exam;
 }
-/***
- Subscribe Lazycoder - https://www.youtube.com/c/LazyCoderOnline?sub_confirmation=1
- whatsapp - https://wa.me/919572181024
- email - wapka1503@gmail.com
- ***/

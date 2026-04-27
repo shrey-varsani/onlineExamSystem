@@ -9,11 +9,6 @@ public class ExamAnswer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    /***
-     Subscribe Lazycoder - https://www.youtube.com/c/LazyCoderOnline?sub_confirmation=1
-     whatsapp - https://wa.me/919572181024
-     email - wapka1503@gmail.com
-     ***/
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "exam_result_id", nullable = false)
     private ExamResult examResult;
